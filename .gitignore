@@ -1,0 +1,31 @@
+# Terraform local state and provider cache
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files may contain sensitive values
+*.tfvars
+*.tfvars.json
+
+# Local overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
+
+# Secrets and keys
+.env
+.env.*
+*.pem
+*.key
+.aws/
+credentials
+
+# Local troubleshooting artifacts
+*console-output*.txt
